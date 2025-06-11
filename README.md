@@ -8,11 +8,13 @@ This repository contains solutions to various coding challenges and technical as
 code-challenge/
 ├── problem1/           # Algorithm challenge: Sum to N
 │   └── problem1.js     # Multiple implementations of summation function
-├── fancy-form/         # React/TypeScript currency swap application
+├── problem2/           # React/TypeScript currency swap application
 │   ├── src/
 │   ├── package.json
 │   └── README.md
-├── messy-react/        # Messy React with refactored/explanation
+├── problem3/           # Messy React with refactored/explanation
+│   ├── explanation.txt
+│   ├── refactored.tsx        
 ├── .gitignore
 └── README.md
 ```
