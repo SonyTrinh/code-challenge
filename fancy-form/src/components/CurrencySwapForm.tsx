@@ -51,7 +51,6 @@ const CurrencySwapForm: React.FC = () => {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  // Use the custom hook for exchange calculation
   const { toAmount, isCalculating, calculationError } = useExchangeCalculation({
     fromToken: formData.fromToken,
     toToken: formData.toToken,
@@ -59,12 +58,10 @@ const CurrencySwapForm: React.FC = () => {
     calculateExchangeAmount,
   });
 
-  // Update formData when calculated amount changes
   useEffect(() => {
     setFormData((prev) => ({ ...prev, toAmount }));
   }, [toAmount]);
 
-  // Update errors when calculation error changes
   useEffect(() => {
     if (calculationError) {
       setErrors((prev) => ({ ...prev, fromAmount: calculationError }));
@@ -86,7 +83,7 @@ const CurrencySwapForm: React.FC = () => {
       fromToken: prev.toToken,
       toToken: prev.fromToken,
       fromAmount: prev.toAmount,
-      toAmount: "", // This will be recalculated by the hook
+      toAmount: "",
     }));
   };
 
@@ -128,7 +125,6 @@ const CurrencySwapForm: React.FC = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Here you would typically make an API call to execute the swap
       alert(
         `Swap submitted!\nFrom: ${formData.fromAmount} ${formData.fromToken}\nTo: ${formData.toAmount} ${formData.toToken}`
       );

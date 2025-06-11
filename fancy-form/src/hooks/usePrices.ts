@@ -4,7 +4,6 @@ import { Token, TokenInfo } from '@/types'
 const PRICES_URL = 'https://interview.switcheo.com/prices.json'
 const TOKEN_ICONS_BASE_URL = 'https://raw.githubusercontent.com/Switcheo/token-icons/main/tokens'
 
-// Map of token symbols to their display names
 const TOKEN_NAMES: Record<string, string> = {
   BLUR: 'Blur',
   bNEO: 'Binance-Peg NEO',
@@ -47,7 +46,6 @@ export const usePrices = () => {
 
   useEffect(() => {
     const fetchPrices = async () => {
-      console.log("🚀 ~ fetchPrices ~ fetchPrices:")
       try {
         setLoading(true)
         const response = await fetch(PRICES_URL)
