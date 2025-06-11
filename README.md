@@ -12,6 +12,7 @@ code-challenge/
 │   ├── src/
 │   ├── package.json
 │   └── README.md
+├── messy-react/        # Messy React with refactored/explanation
 ├── .gitignore
 └── README.md
 ```

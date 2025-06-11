@@ -1,0 +1,5 @@
+1. Incorrect Dependency in useMemo (unnecessary price dep) will cause re-renders or computation when price updates.
+2. The formattedBalances is unused
+3. Missing Key Prop in map
+4. Type Mismatch in rows Mapping
+5.
