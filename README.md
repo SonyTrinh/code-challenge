@@ -40,6 +40,7 @@ code-challenge/
 **Location**: `problem2/`
 
 **DEMO**
+
 <img width="912" alt="image" src="https://github.com/user-attachments/assets/e2d3f4e4-ff50-4746-869e-d15c3962b11d" />
 
 **Objective**: Build a modern, responsive currency swap interface with real-time pricing.
